@@ -12,7 +12,7 @@ palindromeChecker = (x) => {
     const fromRight = x.toLowerCase().split("").reverse().join("")
     return fromLeft === fromRight
 }
-console.log(palindromeChecker("madam"))
+// console.log(palindromeChecker("madam"))
 
 // 3. Write a JavaScript function that generates all combinations of a string. 
 // Example string: 'dog' 
