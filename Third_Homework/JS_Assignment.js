@@ -12,7 +12,7 @@ palindromeChecker = (x) => {
     const fromRight = x.toLowerCase().split("").reverse().join("")
     return fromLeft === fromRight
 }
-// console.log(palindromeChecker("madam"))
+console.log(palindromeChecker("madam"))
 
 // 3. Write a JavaScript function that generates all combinations of a string. 
 // Example string: 'dog' 
@@ -39,7 +39,8 @@ sortString = (x) => {
 // console.log(sortString("webmaster"));
 
 
-// 5. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case. 
+// 5. Write a JavaScript function that accepts a string as a parameter and converts the first letter of 
+// each word of the string in upper case. 
 // Example string: 'the quick brown fox' 
 // Expected Output: 'The Quick Brown Fox '
 uppercaseFirstLetter = (x) => {
@@ -63,6 +64,7 @@ longestWord = (x) => {
 // Example string: 'The quick brown fox' 
 // Expected Output: 5
 countVowels = (x) => {
+    x=x.toLowerCase();
     vowels = ['a', 'e', 'i', 'o', 'u']
     return x.split("").filter(x => vowels.includes(x)).length
 
@@ -114,7 +116,7 @@ identityMatrix = (x) => {
         console.log(arr);
     }
 }
-// identityMatrix(4);
+identityMatrix(4);
 
 // 11. Write a JavaScript function which will take an array of numbers stored and find the second lowest and second greatest numbers, respectively. 
 // Sample array: [1,2,3,4,5]
