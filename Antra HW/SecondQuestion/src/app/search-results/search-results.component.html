@@ -1,0 +1,18 @@
+<table *ngIf="users.length > 0">
+    <thead>
+      <tr>
+        <th>User Id(id)</th>
+        <th>Username(login)</th>
+        <th>Profile URL Link(url)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.login }}</td>
+        <!-- <td><a [href]="user.url" target="_blank">{{ user.url }}</a></td> -->
+        <td>{{ user.url }}</td>
+      </tr>
+    </tbody>
+  </table>
+  

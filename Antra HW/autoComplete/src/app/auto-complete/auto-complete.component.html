@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="cityInput" (input)="onInput()"  placeholder="Enter a city">
+<!-- {{optionChosen}} -->
+<ul *ngIf="filteredOptions.length>0 && cityInput.length>0 && optionChosen!=true">
+    <li *ngFor="let option of filteredOptions" (click)="updateInput(option)">
+        {{option}}
+    </li>
+</ul>

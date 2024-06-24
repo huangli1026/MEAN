@@ -1,0 +1,10 @@
+<div style="text-align:center">
+  <h1>
+    GitHub User Search
+  </h1>
+</div>
+<div class="search-container">
+  <input [(ngModel)]="username" placeholder="Insert username..."/>
+  <button (click)="search()">Search</button>
+</div>
+<app-search-results [users]="users"></app-search-results>

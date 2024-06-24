@@ -1,0 +1,7 @@
+<div *ngIf="albums && albums.length > 0">
+    <div class="album" *ngFor="let album of albums">
+      <img [src]="album.artworkUrl100" alt="Album Cover">
+      <p>{{ album.collectionName }}</p>
+    </div>
+  </div>
+  
