@@ -1,0 +1,8 @@
+<div class="wrapper">
+    <div class="control">
+      <input type="text" class="input" (input)="onType($event)" [class.is-loading]="isLoading"/>
+    </div>
+    <div *ngIf="results.length > 0" class="list is-hoverable">
+      <a *ngFor="let item of results" class="list-item" (click)="onSelection(item)">{{ item }}</a>
+    </div>
+  </div>

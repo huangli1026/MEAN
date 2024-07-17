@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="card-list">
+    <h2>List</h2>
+    <app-card *ngFor="let card of cards" [card]="card" [isExpanded]="expandedCard === card" (cardClick)="onCardSelect(card)"></app-card>
+  </div>
+  <div class="details">
+  <div *ngIf="selectedCard">
+    <h2>{{ selectedCard.name }}</h2>
+    <p>{{ selectedCard.description }}</p>
+    <button class="button" (click)="displayAll()">Save</button>
+  </div>
+  </div>
+</div>

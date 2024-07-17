@@ -1,0 +1,21 @@
+.wrapper {
+    position: relative;
+  }
+  /* .input.is-loading {
+    background-image: url('loader.gif');
+    background-position: right;
+    background-repeat: no-repeat;
+  } */
+  .list {
+    position: absolute;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  }
+  .list-item {
+    padding: 10px;
+    cursor: pointer;
+  }
+  .list-item:hover {
+    background-color: #f0f0f0;
+  }

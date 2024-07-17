@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+  }
+  .card-list {
+    flex: 1;
+    overflow-y: auto; /* Allows scrolling if many cards are added */
+  }
+  .details {
+    flex: 1;
+    padding: 20px;
+    border-left: 2px solid #ccc;
+  }
+  .button{
+    float: right;
+    background-color: blue;
+    color: white;
+  }
+  

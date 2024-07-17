@@ -1,0 +1,9 @@
+
+<div class="card" (click)="onCardClick()">
+    <div [style.background-color]="card.color" [style.width]="isExpanded ? '20px' : '10px'" class="color-bar"></div>
+    <div>
+      <h3>{{ card.name }}</h3>
+      <p>{{ card.description | slice:0:100 }}...</p>
+    </div>
+  </div>
+  

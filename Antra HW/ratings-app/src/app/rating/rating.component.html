@@ -1,0 +1,7 @@
+<div class="ratings__item">
+    <span *ngFor="let star of [1,2,3,4,5]; let i = index" class="star" [class.full]="rate > i">
+        &#9733;
+    </span>
+    <h3>{{name}}</h3>
+    <p>{{content}}</p>
+</div>
