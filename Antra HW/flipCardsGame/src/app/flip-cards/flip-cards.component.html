@@ -1,0 +1,9 @@
+<div class="game-board">
+    <div *ngFor="let card of cards" class="card" [class.flipped]="card.flipped" (click)="flipCard(card)">
+      <div class="card-front">{{ card.emoji }}</div>
+      <div class="card-back">❓</div>
+    </div>
+  </div>
+  <div *ngIf="gameEnded" class="game-over">
+    <button (click)="playAgain()">Play Again</button>
+  </div>
