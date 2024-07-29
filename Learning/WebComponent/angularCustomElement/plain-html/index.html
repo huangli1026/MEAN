@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="polyfills.js"></script>
+        <script src="runtime.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <calculator-widget id="widget"
+        widget-input="My Custom Element" 
+        ></calculator-widget>
+        <script>
+            document.getElementById("widget").addEventListener("widgetOutput",
+                (event)=>{
+                   document.getElementById("result").innerText="result: "+event.detail;
+                }
+             )
+        </script>
+        <div id="result">
+            
+        </div>
+    </body>
+</html>

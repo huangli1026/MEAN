@@ -1,0 +1,19 @@
+p{
+    font-family: Lato;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+input{
+    font-family: Lato;
+    font-weight: 700;
+    font-size: large;
+    margin: 1rem;
+}
+
+button{
+    font-family: Lato;
+    font-weight: 700;
+    font-size: large;
+    margin: 1rem;
+}
