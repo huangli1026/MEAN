@@ -1,0 +1,18 @@
+<!-- pokemon.component.html -->
+<div class="pokemon-container" [ngClass]="{'centered': isConfirmed}">
+    <div *ngFor="let pokemon of starterPokemon">
+      <ng-container *ngIf="!isConfirmed || (isConfirmed && selectedPokemon && selectedPokemon.name.toLowerCase() === pokemon.toLowerCase())">
+        <div class="pokemon-card" (click)="confirmSelection(pokemon)" [ngClass]="{'selected': isConfirmed && selectedPokemon?.name.toLowerCase() === pokemon.toLowerCase()}">
+          <img [src]="getPokemonImage(pokemon)" alt="{{pokemon}}">
+          <h2>{{pokemon}}</h2>
+          <div *ngIf="getPokemonDetails(pokemon)">
+            <p>ID: {{getPokemonDetails(pokemon)?.id}}</p>
+            <p>Weight: {{getPokemonDetails(pokemon)!.weight}}</p>
+            <p>Height: {{getPokemonDetails(pokemon)!.height}}</p>
+            <p *ngFor="let type of getPokemonDetails(pokemon)!.types">• {{type.type.name}}</p>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  
